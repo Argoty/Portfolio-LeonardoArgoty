@@ -41,7 +41,7 @@ const Projects = () => {
                                         </div>
                                     </a>
 
-                                    <a href={project.deployLink} target="_blank" rel="noopener noreferrer" className="rounded-3xl bg-blue-900 text-white hover:bg-blue-800 px-4 py-2">
+                                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="rounded-3xl bg-blue-900 text-white hover:bg-blue-800 px-4 py-2">
                                         <div className="flex items-center">
                                             <span>Ver</span>
                                             <FaEye className="ml-2" />

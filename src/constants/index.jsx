@@ -95,7 +95,7 @@ export const PROJECTS = [
       "Descubra un sitio web de eventos con listados completos y registro sencillo para diversas reuniones utilizando nextjs.",
     image: projectImage4,
     githubLink: "https://github.com/Argoty/RendezVibe",
-    url: "rendezvibe.vercel.app/",
+    url: "https://rendezvibe.vercel.app/",
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
   },
 
