@@ -82,7 +82,7 @@ export const PROJECTS = [
     id: 3,
     name: "E-commerce sobre cosas para el hogar.",
     description:
-      "Explore nuestro comercio electrónico de artículos básicos para el hogar para obtener una selección seleccionada de productos elegantes y funcionales utilizando Vue y Express.",
+      "Explore nuestro comercio electrónico de artículos básicos para el hogar para obtener productos elegantes y funcionales utilizando Vue y Express.",
     image: projectImage3,
     githubLink: "https://github.com/Argoty/e-commerce1-frontend",
     url: "https://jysdistribuidora.vercel.app/",
@@ -186,3 +186,8 @@ export const SOCIAL_MEDIA_LINKS = [
 
 
 ];
+
+export const CONTACT = {
+  email: "leonardoargotydev@gmail.com",
+  location: "Armenia, Colombia"
+}

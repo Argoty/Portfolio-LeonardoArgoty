@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from 'react-hot-toast';
-import { FiSend } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiSend } from 'react-icons/fi';
 import { motion } from "framer-motion";
+import { CONTACT } from '../constants';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -71,6 +72,32 @@ const ContactForm = () => {
             <Toaster />
 
             <h2 className='text-center text-4xl font-semibold my-8 tracking-tighter'>¡Contáctame!</h2>
+            <div className='mb-8 flex flex-col md:flex-row md:justify-between gap-4'>
+                {/* Email Section */}
+                <motion.div whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -40 }}
+                    transition={{ duration: 0.3 }} className='flex items-center gap-2 transition-transform duration-300 transform hover:scale-105 group' >
+                    <FiMail className='text-xl group-hover:text-blue-500' />
+                    <a
+                        href={`mailto:${CONTACT.email}`}
+                        className='text-lg text-stone-100 relative group'
+                    >
+                        {CONTACT.email}
+                        {/* Línea del link al hacer hover */}
+                        <span className="absolute left-0 bottom-[-3px] w-0 h-[2px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </motion.div>
+
+                {/* Address Section */}
+                <motion.div whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: 40 }}
+                    transition={{ duration: 0.3 }} className='flex items-center gap-2 transition-transform duration-300 transform hover:scale-105 group'>
+                    <FiMapPin className='text-xl group-hover:text-cyan-400' />
+                    <p className='text-lg text-stone-100'>
+                        {CONTACT.location}
+                    </p>
+                </motion.div>
+            </div>
 
             <motion.form onSubmit={handleSubmit} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.5 }}>
                 {/* Name and email */}

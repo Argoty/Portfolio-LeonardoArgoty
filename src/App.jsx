@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className='relative h-full overflow-y-auto antialiased'>
+    <div className='relative h-full overflow-y-auto overflow-x-hidden antialiased'>
       {/* Container that has the background image of the entire page covered */}
       <div className='fixed inset-0 bg-fixed bg-cover bg-center bg-img'></div>
 
