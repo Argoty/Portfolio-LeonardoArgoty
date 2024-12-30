@@ -9,6 +9,7 @@ import projectImage1 from "../assets/p1.png";
 import projectImage2 from "../assets/p2.png";
 import projectImage3 from "../assets/p3.png";
 import projectImage4 from "../assets/p4.png";
+import projectImage5 from "../assets/p5.png";
 
 import esIcon from '../assets/es.png';
 import enIcon from '../assets/en.png';
@@ -98,7 +99,16 @@ export const PROJECTS = [
     url: "https://rendezvibe.vercel.app/",
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
   },
-
+  {
+    id: 5,
+    name: "RubikTimer ( Cronometro de cubo de rubik )",
+    description:
+      "Sitio web donde puedes cronometrar tiempos de resoluciones de un cubo de rubik, donde quedara registrado tus tiempos.",
+    image: projectImage5,
+    githubLink: "https://github.com/Argoty/RubikTimer",
+    url: "https://rubiktimer1.netlify.app/",
+    technologies: ["Javascript", "React.js", "Tailwind.css"],
+  },
 ];
 
 export const BIO = [

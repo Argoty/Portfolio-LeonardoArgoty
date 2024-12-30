@@ -72,6 +72,8 @@ const ContactForm = () => {
             <Toaster />
 
             <h2 className='text-center text-4xl font-semibold my-8 tracking-tighter'>¡Contáctame!</h2>
+
+            {/* EMAIL AND LOCATION */}
             <div className='mb-8 flex flex-col md:flex-row md:justify-between gap-4'>
                 {/* Email Section */}
                 <motion.div whileInView={{ opacity: 1, x: 0 }}
