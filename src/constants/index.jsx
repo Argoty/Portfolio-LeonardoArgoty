@@ -3,6 +3,8 @@ import {
   FaLinkedin,
   FaDiscord,
   FaInstagram,
+  FaJava,
+  FaGitAlt
 } from "react-icons/fa6";
 
 import projectImage1 from "../assets/p1.png";
@@ -10,14 +12,16 @@ import projectImage2 from "../assets/p2.png";
 import projectImage3 from "../assets/p3.png";
 import projectImage4 from "../assets/p4.png";
 import projectImage5 from "../assets/p5.png";
+import projectImage6 from "../assets/p6.png";
 
 import esIcon from '../assets/es.png';
 import enIcon from '../assets/en.png';
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb, SiExpress } from "react-icons/si";
+import { SiMongodb, SiExpress, SiSpringboot } from "react-icons/si";
 import { FaNodeJs, FaVuejs, FaJsSquare } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
 
 function calcularEdad(fechaNacimiento) {
   const hoy = new Date();
@@ -49,8 +53,8 @@ export const HERO = {
     "Ingeniero de Software en Formación.",
     "Programador."
   ],
-  description:
-    `Soy un desarrollador web de Colombia, apasionado en crear interfaces de usuario buenas y funcionales. Me gusta transformar ideas en experiencias web atractivas.`,
+  description: "Soy desarrollador web Full-Stack, apasionado por resolver problemas de lógica de negocio y optimizar procesos. También diseño interfaces intuitivas y funcionales para ofrecer soluciones digitales completas.",
+
 };
 
 export const LANGUAGES = [
@@ -97,7 +101,7 @@ export const PROJECTS = [
     image: projectImage4,
     githubLink: "https://github.com/Argoty/RendezVibe",
     url: "https://rendezvibe.vercel.app/",
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    technologies: ["Javascript", "React.js", "Next.js", "MongoDB"],
   },
   {
     id: 5,
@@ -109,49 +113,71 @@ export const PROJECTS = [
     url: "https://rubiktimer1.netlify.app/",
     technologies: ["Javascript", "React.js", "Tailwind.css"],
   },
+  {
+    id: 6,
+    name: "FinanzApp ( Aplicación de finanzas personales )",
+    description:
+      "Aplicación de escritorio donde puedes llevar un control de tus finanzas personales, donde puedes registrar tus ingresos, gastos, ahorros...",
+    image: projectImage6,
+    githubLink: "https://github.com/Argoty/finanzapp-backend",
+    url: "https://www.mediafire.com/file/vkm3ksig68jh6ny/FinanzAppEjecutable.zip/file",
+    technologies: ["Java", "Springboot", "MySQL", "Azure"],
+  },
 ];
 
 export const BIO = [
-  `Soy Javier Leonardo Argoty Roa de Villavicencio, Colombia. Tengo ${calcularEdad("2006-08-10")} años, soy desarrollador web autodidacta, me enfoco especialmente en la parte del frontend, aunque he realizado proyectos que incluyen backend donde he creado API rests.`,
-  "Empece a programar por hobbie en 2022, viendo cursos por internet y nutriendo mi conocimiento y lógica de programación por mi cuenta.",
-  "Actualmente estudio Ingeniería Software en la Universidad EAM, me apasiona el mundo de la tecnología, tengo conocimientos solidos en Javascript, he manejado bastante el framework de Vue al igual que Express por la parte del backend.",
+  `Soy Javier Leonardo Argoty Roa, tengo ${calcularEdad("2006-08-10")} años y soy de Villavicencio, Colombia. Me especializo como desarrollador web frontend, con experiencia también creando APIs REST para proyectos full‑stack, orientados a usabilidad y rendimiento.`,
+  
+  `Empecé en 2022 de forma autodidacta, tomando cursos online y desarrollando proyectos con JavaScript, Vue, Express, y Java, etc. He fortalecido mi lógica y habilidades técnicas a través de retos reales y producción colaborativa.`,
+  
+  `Actualmente estudio Ingeniería de Software en la Institución Universitaria EAM, lo que refleja mi compromiso con el crecimiento y la excelencia académica. Busco roles donde aportar mi versatilidad, continuar aprendiendo y diseñar soluciones que realmente impacten.`,
 ];
+
 
 export const SKILLS = [
   {
     icon: <FaJsSquare className="text-4xl text-yellow-500 lg:text-5xl" />,
     name: "Javascript",
-    experience: "Proficiente",
   },
   {
     icon: <FaVuejs className="text-4xl text-green-400 lg:text-5xl" />,
-    name: "Vue",
-    experience: "Avanzado",
-  },
-  {
-    icon: <SiExpress className="text-4xl text-white lg:text-5xl" />,
-    name: "Express",
-    experience: "Competente",
+    name: "Vue / Vuetify",
   },
   {
     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
     name: "Node.js",
-    experience: "Competente",
   },
   {
     icon: <SiMongodb className="text-4xl text-green-400 lg:text-5xl" />,
     name: "MongoDB",
-    experience: "Competente",
+  },
+  {
+    icon: <DiMysql className="text-4xl text-blue-500 lg:text-5xl" />,
+    name: "MySQL",
   },
   {
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
-    experience: "Proficiente",
   },
   {
     icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
     name: "Next.js",
-    experience: "Competente",
+  },
+  {
+    icon: <FaJava className="text-4xl text-orange-500 lg:text-5xl" />,
+    name: "Java",
+  },
+  {
+    icon: <SiSpringboot className="text-4xl text-green-500 lg:text-5xl" />,
+    name: "Springboot",
+  },
+  {
+    icon: <SiExpress className="text-4xl text-white lg:text-5xl" />,
+    name: "Express",
+  },
+  {
+    icon: <FaGitAlt className="text-4xl text-orange-600 lg:text-5xl" />,
+    name: "Git",
   },
 ];
 

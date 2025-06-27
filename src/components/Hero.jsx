@@ -1,6 +1,6 @@
 import React from 'react'
 import { HERO } from "../constants"
-import javierImg from "../assets/yofoto.jpeg"
+import javierImg from "../assets/YoFoto.jpg"
 import { motion } from "framer-motion"
 
 import Typewriter from 'react-typewriter-effect';
